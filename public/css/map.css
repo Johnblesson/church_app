@@ -13,3 +13,35 @@
         height: 450px; /* You can adjust the height as needed */
     }
   }
+
+   /* Common styles for both mobile and tablet */
+   .contact-detail {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-detail span {
+    margin: 5px 0;
+}
+
+.contact-detail .icon {
+    margin-right: 10px;
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .contact-detail {
+        text-align: center;
+    }
+}
+
+/* Media query for tablet view */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-detail {
+        flex-direction: row;
+    }
+
+    .contact-detail span {
+        margin: 0 20px;
+    }
+}
